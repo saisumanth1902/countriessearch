@@ -11,7 +11,7 @@ function Card({name, flag}) {
         width:"200px",
         height:"200px",
         textAlign:"center"
-    }}>
+    }} className="countryCard" >
         <img src={flag} alt={name} style={{
             width:"100px",
             height:"100px"
