@@ -1,14 +1,15 @@
-  h1 {
+ h1 {
     margin-bottom: 20px;
   }
   
-  Search {
-    font-size: 18px; 
-    padding: 20px;
-    margin-bottom: 50px;
-    width: 500px; 
-    border: 2px solid #ccc; 
-    border-radius: 5px; 
+  input {
+    font-size: 18px; /* Increased font size */
+    padding: 12px; /* Added more padding */
+    margin-bottom: 20px;
+    width: 50%; /* Made the width 50% of the container */
+    max-width: 600px; /* Ensures it doesn't get too wide */
+    border: 2px solid #ccc; /* Added a thicker border */
+    border-radius: 5px; /* Rounded corners for better design */
   }
   
   .countriesGrid {

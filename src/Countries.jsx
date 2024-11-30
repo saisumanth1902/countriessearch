@@ -34,10 +34,17 @@ function Countries() {
       />
     </div>
     
-    <div style={{display:"flex", flexWrap:"wrap", gap:"10px"}}>
-        {
-            filteredCountries.map((country)=><Card key={country.cca3} name= {country.name.common} flag={country.flags.png}/>)
-        }
+    <div className="countriesGrid">
+        {filteredCountries.map((country) => (
+          <div key={country.cca3} className="countryCard">
+            <img
+              src={country.flags.png}
+              alt={`${country.name.common} flag`}
+              className="countryFlag"
+            />
+            <p className="countryName">{country.name.common}</p>
+          </div>
+        ))}
         {filteredCountries.length === 0 && (
           <p className="noResults">No countries found</p>
         )}
